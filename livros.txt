@@ -1,0 +1,2 @@
+1;os vingadores;marvel;45,00;3
+2;it a coisa;it;45,00;4
