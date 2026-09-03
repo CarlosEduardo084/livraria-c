@@ -1,42 +1,100 @@
-# Projeto de Algoritmos e Estruturas de Dados I
+# 📚 Sistema de Gerenciamento de Livraria
 
-Este projeto é um Sistema de Gerenciamento de Livraria desenvolvido em C, utilizando listas ligadas, algoritmos de ordenação (Quicksort), busca binária, manipulação de arquivos e modularização de código.
+Sistema de gerenciamento de livraria desenvolvido em **C** como projeto da disciplina de **Algoritmos e Estruturas de Dados I**.
 
-## Funcionalidades
-* **Sistema de Login:** Login com usuário e senha pré-definidos.
-    * Usuário: `admin`  
-    * Senha: `1234`
-* **Validação de E-mail:** Garante que o e-mail contenha `@`, tenha no máximo 80 caracteres e seja único durante a sessão.
-* **CRUD de Livros:**
-    * Cadastrar novos livros na livraria.
-    * Listar todos os livros cadastrados.
-    * Editar as informações de um livro existente.
-    * Excluir um livro da livraria.
-* **Persistência de Dados:** Os dados dos livros são salvos em arquivo (`livros.txt`) e recarregados ao iniciar o programa.
-* **Algoritmos Avançados:**
-    * **Quicksort:** Para ordenar temporariamente a lista de livros por ID na busca binária.
-    * **Busca Binária:** Para encontrar livros de forma eficiente após a ordenação.
-* **Operações Específicas:**
-    * Listar livros com preço abaixo de R$50 (promoções).
-    * Listar livros disponíveis em estoque.
-    * Comprar livros com atualização do estoque e cálculo do total gasto.
-    * Visualizar e cancelar compras realizadas.
+O projeto utiliza **listas ligadas**, **Quicksort**, **busca binária**, **manipulação de arquivos** e **modularização do código**.
 
-## Criação de arquivos
+## ⚙️ Funcionalidades
 
-Não é necessário criar arquivos manualmente, o programa cria e atualiza o arquivo `livros.txt` automaticamente.
+* 🔐 **Sistema de Login**
 
-## Como Compilar e Executar
+  * Usuário e senha pré-definidos.
+  * Usuário: `admin`
+  * Senha: `1234`
 
-Compile o projeto com o GCC utilizando o seguinte comando no terminal, dentro da pasta do projeto:
-````bash
-gcc main.c livraria.c -o livraria.exe
-````
-Após compilar, execute o programa com:
-```bash
-./livraria
+* 📧 **Validação de E-mail**
+
+  * Verificação da presença de `@`.
+  * Limite de 80 caracteres.
+  * Verificação de e-mails duplicados durante a sessão.
+
+* 📖 **Gerenciamento de Livros**
+
+  * Cadastrar livros.
+  * Listar livros cadastrados.
+  * Editar informações.
+  * Excluir livros.
+
+* 💾 **Persistência de Dados**
+
+  * Os dados dos livros são armazenados em `livros.txt`.
+  * O arquivo é carregado automaticamente ao iniciar o programa.
+
+* 🔎 **Algoritmos**
+
+  * **Quicksort:** utilizado para ordenar temporariamente os livros por ID.
+  * **Busca Binária:** utilizada para localizar livros após a ordenação.
+
+* 🛒 **Operações de Compra**
+
+  * Listar livros com preço abaixo de R$ 50.
+  * Listar livros disponíveis em estoque.
+  * Comprar livros.
+  * Atualizar estoque automaticamente.
+  * Calcular o total da compra.
+  * Visualizar compras realizadas.
+  * Cancelar compras.
+
+## 🗂️ Estrutura do Projeto
+
+```text
+livraria-c/
+├── main.c
+├── livraria.c
+├── livraria.h
+├── livros.txt
+├── README.md
+└── .gitignore
 ```
-No Windows, o executável será livraria.exe, então execute:
+
+### Arquivos principais
+
+* `main.c` — ponto de entrada do programa.
+* `livraria.c` — implementação das funções do sistema.
+* `livraria.h` — declarações e estruturas utilizadas pelo projeto.
+* `livros.txt` — arquivo utilizado para persistência dos dados.
+
+## 🔧 Tecnologias e Conceitos
+
+* Linguagem C
+* GCC
+* Listas ligadas
+* Quicksort
+* Busca binária
+* Manipulação de arquivos
+* Modularização (`.c` e `.h`)
+* CRUD
+
+## ▶️ Como Compilar
+
+Com o **GCC** instalado, abra o terminal dentro da pasta do projeto e execute:
+
+```bash
+gcc main.c livraria.c -o livraria.exe
+```
+
+Depois, execute:
+
 ```bash
 livraria.exe
 ```
+
+No Linux:
+
+```bash
+./livraria
+```
+
+## 🎓 Contexto Acadêmico
+
+Projeto desenvolvido para a disciplina de **Algoritmos e Estruturas de Dados I**.
